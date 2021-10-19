@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {     
+               // Append
+               $('#btnAppend').click(function(){
+                  $('#bdy').append("<h3><b> This is Append Text</b></h3>");
+               });
+
+               // Append
+               $('#btnPrepend').click(function(){
+                  $('#bdy').prepend("<h3><b> This is Prepend Text</b></h3>");
+               });
+			   
+			   // Append To
+               $('#btnAppend').click(function(){
+                  $("<h3><b> This is Append To Text</b></h3>").appendTo('#bdy');
+               });
+
+               // Prepent To
+               $('#btnPrepend').click(function(){
+                  $("<h3><b> This is Prepend To Text</b></h3>").prependTo('#bdy');
+               });
+         });
+     </script>
+<head>
+   <body>
+   <div id="bdy">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM</p>
+   </div>
+   <button id="btnAppend"> Append</button> 
+   <button id="btnPrepend"> Prepend</button>
+   <button id="btnAppend"> Append To</button> 
+   <button id="btnPrepend"> Prepend  TO</button>
+</body>
+</html>
